@@ -10,9 +10,9 @@
 
 <p>This is a home page</p>
 
-<p><a href="/Model1_model2/Controller?action=login">Go to login page</a> </p>
+<p><a href="/MVC/Controller?action=login">Go to login page</a> </p>
 
-<p><a href="/Model1_model2/Controller?action=about">Go to about page</a> </p>
+<p><a href="/MVC/Controller?action=about">Go to about page</a> </p>
 
 
 
