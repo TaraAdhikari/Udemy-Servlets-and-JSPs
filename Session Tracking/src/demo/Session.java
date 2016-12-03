@@ -42,6 +42,7 @@ public class Session extends HttpServlet {
 		/*here session object is saved as a cokkie i.e. saved in a browser*/
 		
 		session.setAttribute("cart", cart);
+		/* this forward will transfer the control of session to showcart.jsps*/
 		
 		getServletContext().getRequestDispatcher("/showcart.jsp").forward(request, response);
 	}
