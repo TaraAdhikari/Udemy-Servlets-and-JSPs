@@ -22,28 +22,24 @@
                 completes. In case of the forward tag, control doesn't go back to pageA again.
            D. --The key difference between the two is that the forward() method will CLOSE the output stream after it has been invoked, 
                 whereas the include method leaves the output stream OPEN.
+                
                 answering with an example : lets have a servlet page named xxx.java and a jsp page named yy.jsp
 
                 In the yy.jsp
-
                 WELCOME to yy.jsp
+                
                 In the xxx.java //using forward()
-
                 RequestDispatcher rd = request.getRequestDispatcher("yy.jsp");
                     rd.forward(request,response);
                     out.println("back to servlet"); //this wont b displayed
-
                 output
-
                 WELCOME to yy.jsp 
+                
                 In the xxx.java //using include()
-
                 RequestDispatcher rd = request.getRequestDispatcher("yy.jsp");
                       rd.include(request,response);
                       out.println("back to servlet");
-
                 output
-
                 WELCOME to yy.jsp back to servlet
                 
  3. Difference between SendRedirect and Forward
