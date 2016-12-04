@@ -44,29 +44,29 @@
                 
  3. Difference between SendRedirect and Forward
                 Forward()-When we use forward method request is transfer to other resource within the same server for further processing.
-                SendRediret()-In case of sendRedirect request is transfer to another resource to different domain or different server for
+                SendRedirect()-In case of sendRedirect request is transfer to another resource to different domain or different server for
                 futher processing.
 
                 Forward()-In case of forward Web container handle all process internally and client or browser is not involved.
 
-                SendRediret()-When you use SendRedirect container transfers the request to client or browser so url given inside the
+                SendRedirect()-When you use SendRedirect container transfers the request to client or browser so url given inside the
                 sendRedirect method is visible as a new request to the client.
 
                 Forward()-When forward is called on requestdispather object we pass request and response object so our old request object
                 is present on new resource which is going to process our request
 
-                SendRediret()-In case of SendRedirect call old request and response object is lost because it’s treated as new request by 
+                SendRedirect()-In case of SendRedirect call old request and response object is lost because it’s treated as new request by 
                 the browser.
                 Forward()-Visually we are not able to see the forwarded address, its is transparent
-                SendRediret()-In address bar we are able to see the new redirected address it’s not transparent.
+                SendRedirect()-In address bar we are able to see the new redirected address it’s not transparent.
 
                 Forward()-Using forward () method is faster then send redirect.
-                SendRediret()-SendRedirect is slower because one extra round trip is required beasue completely new request is created and
+                SendRedirect()-SendRedirect is slower because one extra round trip is required beasue completely new request is created and
                 old request object is lost.Two browser request requird.
 
                 Forward()-When we redirect using forward and we want to use same data in new resource we can use request.setAttribute ()
                 as we have request object available.
-                SendRediret()-But in sendRedirect if we want to use we have to store the data in session or pass along with the URL.
+                SendRedirect()-But in sendRedirect if we want to use we have to store the data in session or pass along with the URL.
 
 
 
